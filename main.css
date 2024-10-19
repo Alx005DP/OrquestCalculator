@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Nunito Sans;
+    color: black;
+    font-weight: 700;
+}
+
+#result {
+    margin-bottom: 10px;
+}
+
+.result {
+    max-height: 20vh;
+    overflow-y: auto;
+}
+
+.info {
+    width: 30%;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #00ff9f;
+    border-radius: 5px;
+}
+
+::-webkit-file-upload-button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    margin: 20px 10px 20px 0px;
+    padding: 5px 10px;
+    font-weight: 700;
+    transition: .2s ease background-color;
+}
+
+::-webkit-file-upload-button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: .2s ease background-color;
+}
+
+.info h1 {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0px;
+}
+
+input[type=number] {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-family: Nunito Sans;
+    transition: .4s ease background-color, .4s ease color;
+    font-weight: 700;
+}
+
+input[type=number]:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+input[type=number]:hover {
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-family: Nunito Sans;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .4s ease background-color, .4s ease color;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .info {
+        width: 80%;
+    }
+}
